@@ -1,3 +1,3 @@
-# Industrial Attachemnt
+# Industrial Attachment
 
-These projects are for mandatory industrial attachemnt.
+These projects are for mandatory industrial attachment.
