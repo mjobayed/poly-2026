@@ -12,41 +12,66 @@
     <fieldset>
       <legend>Application form</legend>
       <form>
-        Name:
-        <input type="text" name="name" />
-        <br />
-        <br />
-        Email:
-        <input type="text" name="email" />
-        <br />
-        <br />
-        Password:
-        <input type="password" name="pwd" />
-        <br />
-        <br />
-        <input type="radio" name="gender" />Male
-        <input type="radio" name="gender" />Female
-        <input type="radio" name="gender" />Others
-        <br />
-        <br />
-        Department:
-        <select name="department">
-          <option>***Select Department***</option>
-          <option>CSE</option>
-          <option>EEE</option>
-          <option>English</option>
-          <option>Bangla</option>
-        </select>
-        <br />
-        <br />
-        Colors:<br />
-        <input type="checkbox" name="c1" />Red<br />
-        <input type="checkbox" name="c2" />Green<br />
-        <input type="checkbox" name="c3" />Yellow<br />
-        <input type="checkbox" name="c4" />Blue<br />
-        <br />
-        <br />
-        <input type="submit" value="Register" />
+        <table cellpadding="10">
+          <tr>
+            <td>Name</td>
+            <td>:</td>
+            <td>
+              <input type="text" name="name" />
+            </td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td>
+              <input type="text" name="email" />
+            </td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td>:</td>
+            <td>
+              <input type="password" name="pwd" />
+            </td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>:</td>
+            <td>
+              <input type="radio" name="gender" />Male
+              <input type="radio" name="gender" />Female
+              <input type="radio" name="gender" />Others
+            </td>
+          </tr>
+          <tr>
+            <td>Department</td>
+            <td>:</td>
+            <td>
+              <select name="department">
+                <option>***Select Department***</option>
+                <option>CSE</option>
+                <option>EEE</option>
+                <option>English</option>
+                <option>Bangla</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Colors</td>
+            <td>:</td>
+            <td>
+              <input type="checkbox" name="c1" />Red
+              <input type="checkbox" name="c2" />Green
+              <input type="checkbox" name="c3" />Yellow
+              <input type="checkbox" name="c4" />Blue
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" value="Register" />
+            </td>
+          </tr>
+        </table>
       </form>
     </fieldset>
   </body>
