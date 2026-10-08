@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+.main-container {
+  background-color: #ddd;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header-container {
+  background: skyblue;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.body-container {
+  width: 100%;
+  height: 550px;
+}
+
+.left-sidebar {
+  background-color: #ddd;
+  width: 35%;
+  height: 100%;
+  float: left;
+}
+
+.left-sidebar__heading,
+.right-sidebar__heading,
+.left-sidebar__text {
+  padding: 10px;
+}
+
+.right-sidebar {
+  background: #afc2cb;
+  width: 65%;
+  height: 100%;
+  float: right;
+}
+
+.footer {
+  background: black;
+  color: #ddd;
+  padding: 10px;
+}
+
+.footer__heading {
+  text-align: center;
+}
