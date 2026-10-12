@@ -5,11 +5,28 @@
 }
 
 .ssection {
-  background: red;
+  background: #1f2235;
+  color: #ffffff;
+  height: 100vh;
 }
 
 .scontainer {
   width: 1140px;
-  border: 1px solid red;
   margin: auto;
+}
+
+.stitle {
+  text-align: center;
+  padding: 20px;
+}
+
+.srow {
+  display: flex;
+}
+
+.scol {
+  width: 33.33%;
+  border: 1px solid red;
+  margin: 0 15px;
+  padding: 20px;
 }
