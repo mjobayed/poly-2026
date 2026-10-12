@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: 1140px;
+  display: flex;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.col {
+  width: 50%;
+  margin-right: 50px;
+}
+
+.col h5 {
+  color: #666666;
+}
+
+.col h1 {
+  margin: 15px 0;
+}
+
+.col p {
+  color: #555555;
+  line-height: 1cm;
+  margin: 10px 0;
+}
+
+.col button {
+  background: blue;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.image {
+  width: 400px;
+  height: 400px;
+}
