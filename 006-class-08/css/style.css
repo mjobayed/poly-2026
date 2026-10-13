@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1440px;
+  margin: 20px auto;
+}
+
+.row {
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+}
+
+.col {
+  border: 1px solid red;
+  width: 25%;
+  height: 100px;
+  margin: 5px;
+}
