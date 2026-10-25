@@ -6,8 +6,14 @@
     <title>JavaScript</title>
   </head>
   <body>
+    <p id="head_p"><span>Hello form paragraph tag</span></p>
+
     <script>
-      document.write("Hello, World!");
+      let p1 = document.getElementById("head_p").innerHTML;
+      let p11 = document.getElementById("head_p").innerText;
+
+      console.log(p1);
+      console.log(p11);
     </script>
   </body>
 </html>
