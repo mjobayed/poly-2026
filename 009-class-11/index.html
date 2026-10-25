@@ -9,8 +9,10 @@
     <p id="head_p"><span>Hello form paragraph tag</span></p>
 
     <script>
-      let p1 = document.getElementById("head_p").innerHTML;
+      let p1 = document.getElementById("head_p");
       let p11 = document.getElementById("head_p").innerText;
+
+      p1.style.color = "red";
 
       console.log(p1);
       console.log(p11);
