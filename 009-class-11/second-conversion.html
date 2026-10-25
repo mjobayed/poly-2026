@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second conversion</title>
+  </head>
+  <body>
+    <script>
+      let second = 15000;
+      let hour = Math.trunc(second / 60 / 60);
+      let minute = second / 60 - hour * 60;
+      document.write(
+        second,
+        " second(s) = ",
+        hour,
+        " hour(s) ",
+        minute,
+        " minute(s)",
+      );
+    </script>
+  </body>
+</html>
