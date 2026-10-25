@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount conter</title>
+  </head>
+  <body>
+    <script>
+      let op = 8000;
+      let dis_percentage = 0.1;
+      let discount = op * dis_percentage;
+      let payable = op - discount;
+      document.write("Original Price: ", op);
+      document.write("<br>");
+      document.write("Discount: ", dis_percentage * 100, "%");
+      document.write("<br>");
+      document.write("Total Discount: ", discount);
+      document.write("<br>");
+      document.write("====================");
+      document.write("<br>");
+      document.write("Payable Amount: ", payable);
+    </script>
+  </body>
+</html>
