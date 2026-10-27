@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPA to Grade</title>
+  </head>
+  <body>
+    <label>Enter GPA:</label>
+    <input type="text" id="gpa" />
+    <button onclick="resultFun()">Submit</button>
+
+    <script>
+      function resultFun() {
+        let gpa = Number(document.getElementById("gpa").value);
+
+        switch (gpa) {
+          case 5.0:
+            window.alert("A+");
+            break;
+          case 4.0:
+            window.alert("A");
+            break;
+          case 3.5:
+            window.alert("A-");
+            break;
+          case 3.0:
+            window.alert("B");
+            break;
+          case 2.0:
+            window.alert("C");
+            break;
+          case 1.0:
+            window.alert("D");
+            break;
+          default:
+            window.alert("F");
+        }
+      }
+    </script>
+  </body>
+</html>
