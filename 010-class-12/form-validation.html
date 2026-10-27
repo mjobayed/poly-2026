@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <h2>Registration page</h2>
+    <form onsubmit="return submitForm();">
+      <label>Name</label>
+      <input type="text" id="name" />
+      <span id="name-error" style="color: red"></span>
+      <br />
+      <label>Email</label>
+      <input type="text" id="email" />
+      <span id="email-error" style="color: red"></span>
+      <br />
+      <label>Password</label>
+      <input type="password" id="password" />
+      <span id="password-error" style="color: red"></span>
+      <br />
+      <input type="submit" value="Register" />
+    </form>
+
+    <script>
+      const dbEmail = "hello@example.com";
+      let valid = true;
+
+      function submitForm() {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+
+        let nameError = document.getElementById("name-error");
+        let emailError = document.getElementById("email-error");
+        let passwordError = document.getElementById("password-error");
+
+        nameError.textContent = "";
+        emailError.textContent = "";
+        passwordError.textContent = "";
+
+        if (name.length < 3) {
+          nameError.textContent = "Must be at least 3 characters.";
+          valid = false;
+        }
+
+        if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+          emailError.textContent = "Invalid email.";
+          valid = false;
+        }
+
+        if (email === dbEmail) {
+          emailError.textContent = "Email already exists.";
+          valid = false;
+        }
+
+        if (password.length < 6) {
+          passwordError.textContent = "Must be 6 characters or longer.";
+          valid = false;
+        }
+
+        return valid;
+      }
+    </script>
+  </body>
+</html>
