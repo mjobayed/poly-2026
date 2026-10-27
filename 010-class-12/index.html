@@ -16,7 +16,9 @@
         let n1 = parseInt(document.getElementById("number1").value);
         let n2 = parseInt(document.getElementById("number2").value);
 
-        if (n1 > n2) {
+        if (n1 === n2) {
+          window.alert("Both are equal");
+        } else if (n1 > n2) {
           window.alert(n1 + " is greater than " + n2);
         } else {
           window.alert(n2 + " is greater than " + n1);
