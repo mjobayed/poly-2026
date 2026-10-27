@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional Statements</title>
+  </head>
+  <body>
+    <label>Enter number 1</label>
+    <input type="text" id="number1" />
+    <label>Enter number 2</label>
+    <input type="text" id="number2" />
+    <button onclick="actionfun()">submit</button>
+    <script>
+      function actionfun() {
+        let n1 = parseInt(document.getElementById("number1").value);
+        let n2 = parseInt(document.getElementById("number2").value);
+
+        if (n1 > n2) {
+          window.alert(n1 + " is greater than " + n2);
+        } else {
+          window.alert(n2 + " is greater than " + n1);
+        }
+      }
+    </script>
+  </body>
+</html>
