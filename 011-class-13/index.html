@@ -12,18 +12,24 @@
         border-radius: 0.3rem;
       }
 
-      body {
+      .container {
         display: flex;
         flex-direction: row;
       }
     </style>
   </head>
   <body>
+    <div class="container" id="container"></div>
+
     <script>
+      const container = document.getElementById("container");
       let names = ["Hasan", "Mizan", "Talha", "Nayeem"];
 
       for (let i = 0; i < names.length; i++) {
-        document.write(`<div class="names">${names[i]}</div>`);
+        let textContainer = document.createElement("div");
+        textContainer.className = "names";
+        textContainer.textContent = names[i];
+        container.appendChild(textContainer);
       }
     </script>
   </body>
