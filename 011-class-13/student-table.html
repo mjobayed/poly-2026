@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Table</title>
+    <style>
+      .student-table,
+      .student-table th,
+      .student-table td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .student-table th,
+      .student-table td {
+        padding: 0.3rem 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="student-table" id="studentTable">
+      <tr>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Status</th>
+        <th>Image</th>
+      </tr>
+
+      <script>
+        const studentTable = document.getElementById("studentTable");
+        const data = [
+          {
+            name: "Mizan",
+            roll: 12,
+            status: "active",
+            image: "./assets/images/image-01.png",
+          },
+          {
+            name: "Nayeem",
+            roll: 5,
+            status: "active",
+            image: "./assets/images/image-01.png",
+          },
+          {
+            name: "Talha",
+            roll: 8,
+            status: "inactive",
+            image: "./assets/images/image-01.png",
+          },
+          {
+            name: "Ayat",
+            roll: 19,
+            status: "active",
+            image: "./assets/images/image-01.png",
+          },
+          {
+            name: "Kamola",
+            roll: 4,
+            status: "active",
+            image: "./assets/images/image-01.png",
+          },
+          {
+            name: "Apurbo",
+            roll: 9,
+            status: "active",
+            image: "./assets/images/image-01.png",
+          },
+        ];
+
+        data.forEach((item) => {
+          if (item.status !== "inactive") {
+            studentTable.innerHTML += `
+            <tr>
+              <td>${item.name}</td>
+              <td>${item.roll}</td>
+              <td>${item.status}</td>
+              <td>
+                <img src="${item.image}" width="50" height="50" />
+              </td>
+            </tr>
+            `;
+          }
+        });
+      </script>
+    </table>
+  </body>
+</html>
