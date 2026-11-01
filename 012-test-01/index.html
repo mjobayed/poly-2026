@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Student Result Management System</title>
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="root">
+      <section class="user-input">
+        <h2 class="heading">Student Result Management System</h2>
+        <div>
+          <label class="name-label" for="name">Student Name:</label>
+          <input
+            class="name-input"
+            id="name"
+            type="text"
+            placeholder="Enter Student's Name"
+          />
+        </div>
+        <span id="name-error" style="color: red"></span>
+        <h4>Enter Marks below</h4>
+        <table class="marks-container">
+          <tr>
+            <td>
+              <label class="bangla-label" for="num-bangla">Bangla</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input class="bangla-input" id="num-bangla" type="number" />
+            </td>
+            <td>
+              <span id="bangla-error" style="color: red"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="english-label" for="num-english">English</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input class="english-input" id="num-english" type="number" />
+            </td>
+            <td>
+              <span id="english-error" style="color: red"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="mathematics-label" for="num-mathematics"
+                >Mathematics</label
+              >
+            </td>
+            <td>:</td>
+            <td>
+              <input
+                class="mathematics-input"
+                id="num-mathematics"
+                type="number"
+              />
+            </td>
+            <td>
+              <span id="mathematics-error" style="color: red"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="science-label" for="num-science">Science</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input class="science-input" id="num-science" type="number" />
+            </td>
+            <td>
+              <span id="science-error" style="color: red"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="ict-label" for="num-ict">ICT</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input class="ict-input" id="num-ict" type="number" />
+            </td>
+            <td>
+              <span id="ict-error" style="color: red"></span>
+            </td>
+          </tr>
+        </table>
+        <button id="submit" class="submit">Calculate</button>
+      </section>
+
+      <section class="result-display" id="result-display" style="display: none">
+        <h2 class="student-name"><span id="student-name"></span>'s result</h2>
+        <table class="results-table">
+          <tr>
+            <td>Total Marks</td>
+            <td>:</td>
+            <td id="total-marks"></td>
+          </tr>
+          <tr>
+            <td>Average Marks</td>
+            <td>:</td>
+            <td id="avg-marks"></td>
+          </tr>
+          <tr>
+            <td>Final Grade</td>
+            <td>:</td>
+            <td id="grade"></td>
+          </tr>
+          <tr>
+            <td>Status</td>
+            <td>:</td>
+            <td id="status"></td>
+          </tr>
+        </table>
+      </section>
+    </div>
+  </body>
+</html>
