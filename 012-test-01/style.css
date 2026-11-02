@@ -30,14 +30,29 @@ body {
   align-items: center;
 }
 
-.result-display {
+.heading {
+  text-decoration: underline;
+}
+
+.marks-container {
   display: flex;
   flex-direction: column;
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.marks-row {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.heading {
-  text-decoration: underline;
+.input-label {
+  min-width: 120px;
+}
+
+.input-error {
+  font-size: 12px;
 }
 
 input {
@@ -50,4 +65,10 @@ input[type="number"] {
 
 .submit {
   padding: 0.8rem;
+}
+
+.result-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -14,85 +14,78 @@
     <div class="root">
       <section class="user-input">
         <h2 class="heading">Student Result Management System</h2>
-        <div>
-          <label class="name-label" for="name">Student Name:</label>
-          <input
-            class="name-input"
-            id="name"
-            type="text"
-            placeholder="Enter Student's Name"
-          />
+        <div class="marks-row">
+          <label class="name-label" for="name" style="width: 130px"
+            >Student Name</label
+          >
+          <div class="input-error-col">
+            <input
+              class="name-input"
+              id="name"
+              type="text"
+              placeholder="Enter Student's Name"
+            />
+            <div class="input-error" id="name-error" style="color: red"></div>
+          </div>
         </div>
-        <span id="name-error" style="color: red"></span>
         <h4>Enter Marks below</h4>
-        <table class="marks-container">
-          <tr>
-            <td>
-              <label class="bangla-label" for="num-bangla">Bangla</label>
-            </td>
-            <td>:</td>
-            <td>
+        <div class="marks-container">
+          <div class="marks-row">
+            <label class="input-label" for="num-bangla">Bangla</label>
+            <div class="input-error-col">
               <input class="bangla-input" id="num-bangla" type="number" />
-            </td>
-            <td>
-              <span id="bangla-error" style="color: red"></span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label class="english-label" for="num-english">English</label>
-            </td>
-            <td>:</td>
-            <td>
+              <div
+                class="input-error"
+                id="bangla-error"
+                style="color: red"
+              ></div>
+            </div>
+          </div>
+          <div class="marks-row">
+            <label class="input-label" for="num-english">English</label>
+            <div class="input-error-col">
               <input class="english-input" id="num-english" type="number" />
-            </td>
-            <td>
-              <span id="english-error" style="color: red"></span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label class="mathematics-label" for="num-mathematics"
-                >Mathematics</label
-              >
-            </td>
-            <td>:</td>
-            <td>
+              <div
+                class="input-error"
+                id="english-error"
+                style="color: red"
+              ></div>
+            </div>
+          </div>
+          <div class="marks-row">
+            <label class="input-label" for="num-mathematics">Mathematics</label>
+            <div class="input-error-col">
               <input
                 class="mathematics-input"
                 id="num-mathematics"
                 type="number"
               />
-            </td>
-            <td>
-              <span id="mathematics-error" style="color: red"></span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label class="science-label" for="num-science">Science</label>
-            </td>
-            <td>:</td>
-            <td>
+              <div
+                class="input-error"
+                id="mathematics-error"
+                style="color: red"
+              ></div>
+            </div>
+          </div>
+          <div class="marks-row">
+            <label class="input-label" for="num-science">Science</label>
+            <div class="input-error-col">
               <input class="science-input" id="num-science" type="number" />
-            </td>
-            <td>
-              <span id="science-error" style="color: red"></span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label class="ict-label" for="num-ict">ICT</label>
-            </td>
-            <td>:</td>
-            <td>
+              <div
+                class="input-error"
+                id="science-error"
+                style="color: red"
+              ></div>
+            </div>
+          </div>
+          <div class="marks-row">
+            <label class="input-label" for="num-ict">ICT</label>
+            <div class="input-error-col">
               <input class="ict-input" id="num-ict" type="number" />
-            </td>
-            <td>
-              <span id="ict-error" style="color: red"></span>
-            </td>
-          </tr>
-        </table>
+              <div class="input-error" id="ict-error" style="color: red"></div>
+            </div>
+          </div>
+        </div>
         <button id="submit" class="submit">Calculate</button>
       </section>
 
