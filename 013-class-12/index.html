@@ -12,6 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="root">
@@ -68,6 +72,47 @@
             </p>
           </div>
         </div>
+      </section>
+      <section class="swiperjs">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/image-01.png" alt="Image not loaded" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/image-02.png" alt="Image not loaded" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/image-01.png" alt="Image not loaded" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/image-02.png" alt="Image not loaded" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/image-01.png" alt="Image not loaded" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/image-02.png" alt="Image not loaded" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
       </section>
     </div>
   </body>
