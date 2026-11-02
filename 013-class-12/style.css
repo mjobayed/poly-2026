@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  font-family: sans;
+}
+
+.root {
+  width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.why {
+  font-size: 20px;
+  font-weight: bold;
+  color: #10008d;
+  text-transform: uppercase;
+}
+
+.slogan {
+  width: 500px;
+  text-align: center;
+}
+
+.services {
+  margin-top: 80px;
+  display: flex;
+}
+
+.service {
+  margin-bottom: 40px;
+}
+
+.service i {
+  font-size: 25px;
+  color: white;
+}
+
+.service-paragraph {
+  color: #444;
+}
+
+.icon {
+  background: #10008d;
+  display: inline-block;
+  height: 60px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo img {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 30px;
+}
