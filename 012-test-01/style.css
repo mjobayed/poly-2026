@@ -11,17 +11,11 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background: #afafaf;
 }
 
 .root {
-  height: 600px;
   background: #fff;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 3px 3px 15px 8px #888;
-  min-width: 600px;
+  padding: 1rem;
 }
 
 .user-input {
@@ -32,6 +26,7 @@ body {
 
 .heading {
   text-decoration: underline;
+  text-align: center;
 }
 
 .marks-container {
@@ -83,7 +78,6 @@ input[type="number"] {
 .results-table {
   border: 2px solid #000;
   border-radius: 5px;
-  width: 50%;
 }
 
 .results-table td {
@@ -92,4 +86,24 @@ input[type="number"] {
 
 .results-table tr:nth-of-type(odd) {
   background: #ddd;
+}
+
+@media (min-width: 768px) {
+  body {
+    align-items: center;
+    background: #afafaf;
+  }
+
+  .root {
+    height: 600px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 15px 8px #888;
+    min-width: 600px;
+  }
+
+  .results-table {
+    width: 50%;
+  }
 }
