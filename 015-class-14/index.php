@@ -39,3 +39,22 @@ if ($num1 > $num2) {
 } else {
     echo "$num1 and $num2 are equal.";
 }
+
+echo "<br />";
+
+// age classification
+$age = 40;
+
+if ($age >= 100) {
+    echo "You are ancient.";
+} elseif ($age >= 40) {
+    echo "You are an adult (old).";
+} elseif ($age >= 18) {
+    echo "You are an adult (young).";
+} elseif ($age >= 14) {
+    echo "You are a teenager.";
+} elseif ($age >= 0) {
+    echo "You are a child.";
+} else {
+    echo "Sadly, you do not exist yet.";
+}
