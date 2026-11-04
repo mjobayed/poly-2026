@@ -58,3 +58,31 @@ if ($age >= 100) {
 } else {
     echo "Sadly, you do not exist yet.";
 }
+echo "<br />";
+
+// Grade calculation
+$bangla = 100;
+$english = 950;
+$math = 750;
+
+$avg = ($bangla + $english + $math) / 3;
+
+if ($avg > 100) {
+    echo "Grade: Math Error!";
+} elseif ($avg >= 80 && $avg <= 100) {
+    echo "Grade: A+";
+} elseif ($avg >= 70 && $avg < 80) {
+    echo "Grade: A";
+} elseif ($avg >= 60 && $avg < 70) {
+    echo "Grade: A-";
+} elseif ($avg >= 50 && $avg < 60) {
+    echo "Grade: B";
+} elseif ($avg >= 40 && $avg < 50) {
+    echo "Grade: C";
+} elseif ($avg >= 33 && $avg < 40) {
+    echo "Grade: D";
+} else {
+    echo "Grade: F";
+    echo "<br />";
+    echo "Yes, You have failed. Study more next time.";
+}
