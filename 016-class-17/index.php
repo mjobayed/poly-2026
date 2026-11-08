@@ -24,3 +24,9 @@ echo strtolower($sentence);
 echo "<br />";
 
 var_dump($new);
+
+echo "<br />";
+
+$colors = ["Red", "Blue", "Green"];
+
+var_dump($colors);
