@@ -30,3 +30,12 @@ echo "<br />";
 $colors = ["Red", "Blue", "Green"];
 
 var_dump($colors);
+
+echo "<br />";
+
+$person = [
+    "first_name" => "John",
+    "last_name" => "Doe"
+];
+
+echo $person["first_name"];
