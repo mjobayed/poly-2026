@@ -39,3 +39,13 @@ $person = [
 ];
 
 echo $person["first_name"];
+
+echo "<br />";
+
+$contacts = [
+    ["A", 1],
+    ["B", 2],
+    ["C", 3]
+];
+
+echo $contacts[2][1];
