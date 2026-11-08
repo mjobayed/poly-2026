@@ -20,3 +20,7 @@ echo strtoupper($new);
 echo "<br />";
 
 echo strtolower($sentence);
+
+echo "<br />";
+
+var_dump($new);
