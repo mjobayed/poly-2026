@@ -49,3 +49,12 @@ $contacts = [
 ];
 
 echo $contacts[2][1];
+
+echo "<br />";
+
+// loop
+$i = 1;
+while ($i <= 10) {
+    echo "$i ";
+    $i++;
+}
