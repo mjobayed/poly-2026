@@ -58,3 +58,10 @@ while ($i <= 10) {
     echo "$i ";
     $i++;
 }
+
+echo "<br />";
+
+// loop
+for ($i = 0; $i <= 10; $i++) {
+    echo "$i ";
+}
