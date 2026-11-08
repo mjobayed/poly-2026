@@ -79,3 +79,9 @@ while ($i < sizeof($colors)) {
     echo "$colors[$i] ";
     $i++;
 }
+
+echo "<br />";
+
+foreach ($colors as $color) {
+    echo "$color ";
+}
