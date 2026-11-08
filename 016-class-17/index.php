@@ -12,3 +12,11 @@ echo "<br />";
 
 $new = str_replace("simple", "complex", $text);
 echo $new;
+
+echo "<br />";
+
+echo strtoupper($new);
+
+echo "<br />";
+
+echo strtolower($sentence);
