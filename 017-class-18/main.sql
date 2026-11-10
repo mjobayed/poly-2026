@@ -38,3 +38,7 @@ SELECT * FROM student;
 
 -- Select specific columns
 SELECT name, age FROM student;
+
+-- Delete a row
+DELETE FROM student WHERE roll = 5;
+SELECT * FROM student;
