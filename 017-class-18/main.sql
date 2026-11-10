@@ -35,3 +35,6 @@ SELECT * FROM student WHERE roll > 2 AND age > 20;
 -- Update the data and show it
 UPDATE student SET age = 26 WHERE roll = 5;
 SELECT * FROM student;
+
+-- Select specific columns
+SELECT name, age FROM student;
