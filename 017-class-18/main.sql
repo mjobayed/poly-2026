@@ -21,3 +21,5 @@ INSERT INTO student (roll, name, age, email) VALUES
     (5, "Janice Doe", 24, "user5@example.com");
 
 SELECT * FROM student;
+
+SELECT * FROM student WHERE roll = 3;
