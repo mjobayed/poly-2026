@@ -42,3 +42,6 @@ SELECT name, age FROM student;
 -- Delete a row
 DELETE FROM student WHERE roll = 5;
 SELECT * FROM student;
+
+-- Exclude a row
+SELECT name, age FROM student WHERE NOT age = 17;
