@@ -15,6 +15,9 @@ CREATE TABLE student (
 
 INSERT INTO student (roll, name, age, email) VALUES
     (1, "John Doe", 20, "user1@example.com"),
-    (2, "Jane Doe", 21, "user2@example.com");
+    (2, "Jane Doe", 19, "user2@example.com"),
+    (3, "Jack Doe", 17, "user3@example.com"),
+    (4, "Jerry Doe", 25, "user4@example.com"),
+    (5, "Janice Doe", 24, "user5@example.com");
 
 SELECT * FROM student;
