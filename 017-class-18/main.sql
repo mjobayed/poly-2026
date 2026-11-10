@@ -23,3 +23,7 @@ INSERT INTO student (roll, name, age, email) VALUES
 SELECT * FROM student;
 
 SELECT * FROM student WHERE roll = 3;
+
+UPDATE student SET age = 26 WHERE roll = 5;
+
+SELECT * FROM student;
