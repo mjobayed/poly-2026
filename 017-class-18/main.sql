@@ -29,6 +29,9 @@ SELECT * FROM student;
 -- Basically search operation
 SELECT * FROM student WHERE roll = 3;
 
+-- Select roll above 2 and age above 20
+SELECT * FROM student WHERE roll > 2 AND age > 20;
+
 UPDATE student SET age = 26 WHERE roll = 5;
 
 SELECT * FROM student;
