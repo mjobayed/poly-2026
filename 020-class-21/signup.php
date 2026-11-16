@@ -21,23 +21,23 @@
                 <form action="" method="post">
                   <div class="mb-3">
                     <label class="form-label">Name</label>
-                    <input type="text" class="form-control" name="name" />
+                    <input type="text" class="form-control" name="name" placeholder="Enter your name" />
                   </div>
                   <div class="mb-3">
                     <label class="form-label">Phone</label>
-                    <input type="number" class="form-control" name="phone" />
+                    <input type="number" class="form-control" name="phone" placeholder="Enter your phone number" />
                   </div>
                   <div class="mb-3">
                     <label class="form-label">Email</label>
-                    <input type="email" class="form-control" name="email" />
+                    <input type="email" class="form-control" name="email" placeholder="Enter your email" />
                   </div>
                   <div class="mb-3">
                     <label class="form-label">Username</label>
-                    <input type="text" class="form-control" name="username" />
+                    <input type="text" class="form-control" name="username" placeholder="Enter username" />
                   </div>
                   <div class="mb-3">
                     <label class="form-label">Password</label>
-                    <input type="password" class="form-control" name="password" />
+                    <input type="password" class="form-control" name="password" placeholder="Enter password" />
                   </div>
                   <button type="submit" class="btn btn-primary" name="signup">Signup</button>
                 </form>
