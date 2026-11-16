@@ -16,6 +16,14 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-5">
+          <?php
+          $name = $_POST["name"];
+          $phone = $_POST["phone"];
+          $email = $_POST["email"];
+          $username = $_POST["username"];
+          $password = $_POST["password"];
+          echo $phone;
+          ?>
             <div class="card">
               <div class="card-body">
                 <form action="" method="post">
