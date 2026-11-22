@@ -36,7 +36,21 @@ if ($conn->connect_error) {
               $email = $_POST["email"];
               $username = $_POST["username"];
               $password = $_POST["password"];
-              echo $phone;
+              $status = "Active";
+              $slug = uniqid();
+              $sql = "INSERT INTO cv_user (u_name, u_phone, u_email, u_username, u_password, u_status, u_slug) VALUES ('$name', '$phone', '$email', '$username', '$password', '$status', '$slug')";
+
+              $result = $conn->query($sql);
+
+              if ($result) {
+                  echo '<div class="alert alert-success" role="alert">
+                          Data successfully inserted!
+                        </div>';
+              } else {
+                  echo '<div class="alert alert-warning" role="alert">
+                          Data insertion failed!
+                        </div>';
+              }
           }
 ?>
             <div class="card">
@@ -48,7 +62,7 @@ if ($conn->connect_error) {
                   </div>
                   <div class="mb-3">
                     <label class="form-label">Phone</label>
-                    <input type="number" class="form-control" name="phone" placeholder="Enter your phone number" />
+                    <input type="text" class="form-control" name="phone" placeholder="Enter your phone number" />
                   </div>
                   <div class="mb-3">
                     <label class="form-label">Email</label>
