@@ -2,7 +2,7 @@
 $dbhost = "127.0.0.1";
 $dbusername = "root";
 $dbpassword = "";
-$dbname = "studentdb";
+$dbname = "cv";
 
 // Create db connection
 $conn = new mysqli($dbhost, $dbusername, $dbpassword, $dbname);
