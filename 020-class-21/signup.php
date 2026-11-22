@@ -1,11 +1,11 @@
 <?php
-$host = "127.0.0.1";
-$username = "root";
-$password = "";
+$dbhost = "127.0.0.1";
+$dbusername = "root";
+$dbpassword = "";
 $dbname = "studentdb";
 
 // Create db connection
-$conn = new mysqli($host, $username, $password, $dbname);
+$conn = new mysqli($dbhost, $dbusername, $dbpassword, $dbname);
 
 if ($conn->connect_error) {
     die("Connection error: " . $conn->connect_error);
