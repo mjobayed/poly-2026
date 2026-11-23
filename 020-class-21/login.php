@@ -1,4 +1,5 @@
 <?php
+session_start();
 $dbhost = "127.0.0.1";
 $dbusername = "root";
 $dbpassword = "";
@@ -39,7 +40,8 @@ if ($conn->connect_error) {
               $count = $result->num_rows;
 
               if ($count == 1) {
-                  echo "Login successful";
+                  $_SESSION['uname'] = "Hello world";
+                  header('location:admin/index.php');
               } else {
                   echo '<div class="alert alert-warning" role="alert">
                       Username or Password wrong!
