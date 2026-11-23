@@ -1,5 +1,8 @@
 <?php
 session_start();
+if ($_SESSION['ulogin'] != true) {
+    header('location:../login.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
