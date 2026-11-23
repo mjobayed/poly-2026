@@ -40,7 +40,10 @@ if ($conn->connect_error) {
               $count = $result->num_rows;
 
               if ($count == 1) {
-                  $_SESSION['uname'] = "Hello world";
+                  $rows = $result->fetch_assoc();
+                  $_SESSION['ulogin'] = true;
+                  $_SESSION['uslug'] = $rows['u_slug'];
+                  $_SESSION['uname'] = $rows['u_name'];
                   header('location:admin/index.php');
               } else {
                   echo '<div class="alert alert-warning" role="alert">
